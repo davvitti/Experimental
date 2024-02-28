@@ -308,10 +308,19 @@ cat("Valor crítico da distribuição F:", valor_critico, "\n")
 
 ```
 
+```{r}
+gl1 <- seq(2, 16, 1)
+gl2 <- seq(2,16,1)
+tableF <- qf(0.95, gl1, 16)  
+tableF
+```
+
 __Distribuição F__
+
 
 ```{r, echo=FALSE}
 library(RcmdrMisc)
+
 local({
   .x <- seq(0.005, 10.344, length.out=1000)  
   plotDistr(.x, df(.x, df1=3, df2=16), cdf=FALSE, xlab="x", ylab="Density", main=paste("F Distribution:  Numerator df = 3, Denominator df = 16"), 
