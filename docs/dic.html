@@ -1031,27 +1031,76 @@ class="math display">\[= 275,75 - 163,75 = 112,00\]</span></p>
 </tbody>
 </table>
 <p>F tabelado:</p>
-<pre class="r"><code># Defina o nível de significância desejado (por exemplo, 0.05 para um nível de 5%)
-nivel_de_significancia &lt;- 0.05
-
-# Defina os graus de liberdade do numerador (df1) e do denominador (df2)
-df1 &lt;- 3  # Graus de liberdade do numerador
-df2 &lt;- 16 # Graus de liberdade do denominador
-
-# Encontre o valor crítico da distribuição F para o nível de significância especificado
-valor_critico &lt;- qf(1 - nivel_de_significancia, df1, df2)
-
-# Imprima o valor crítico
-cat(&quot;Valor crítico da distribuição F:&quot;, valor_critico, &quot;\n&quot;)
-#&gt; Valor crítico da distribuição F: 3,238872</code></pre>
-<pre class="r"><code>gl1 &lt;- seq(1, 20, 1)
-gl2 &lt;- seq(1,20,1)
-tableF &lt;- qf(0.95, gl1, gl2)  
-tableF
-#&gt;  [1] 161,447639  19,000000   9,276628   6,388233   5,050329   4,283866
-#&gt;  [7]   3,787044   3,438101   3,178893   2,978237   2,817930   2,686637
-#&gt; [13]   2,576927   2,483726   2,403447   2,333484   2,271893   2,217197
-#&gt; [19]   2,168252   2,124155</code></pre>
+<pre><code>#&gt; Valor crítico da distribuição F: 3,238872</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="right">x</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">161,447639</td>
+</tr>
+<tr class="even">
+<td align="right">19,000000</td>
+</tr>
+<tr class="odd">
+<td align="right">9,276628</td>
+</tr>
+<tr class="even">
+<td align="right">6,388233</td>
+</tr>
+<tr class="odd">
+<td align="right">5,050329</td>
+</tr>
+<tr class="even">
+<td align="right">4,283866</td>
+</tr>
+<tr class="odd">
+<td align="right">3,787043</td>
+</tr>
+<tr class="even">
+<td align="right">3,438101</td>
+</tr>
+<tr class="odd">
+<td align="right">3,178893</td>
+</tr>
+<tr class="even">
+<td align="right">2,978237</td>
+</tr>
+<tr class="odd">
+<td align="right">2,817931</td>
+</tr>
+<tr class="even">
+<td align="right">2,686637</td>
+</tr>
+<tr class="odd">
+<td align="right">2,576927</td>
+</tr>
+<tr class="even">
+<td align="right">2,483726</td>
+</tr>
+<tr class="odd">
+<td align="right">2,403447</td>
+</tr>
+<tr class="even">
+<td align="right">2,333484</td>
+</tr>
+<tr class="odd">
+<td align="right">2,271893</td>
+</tr>
+<tr class="even">
+<td align="right">2,217197</td>
+</tr>
+<tr class="odd">
+<td align="right">2,168252</td>
+</tr>
+<tr class="even">
+<td align="right">2,124155</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Distribuição F</strong></p>
 <pre><code>#&gt; Carregando pacotes exigidos: car
 #&gt; Carregando pacotes exigidos: carData
@@ -1187,6 +1236,84 @@ arroz</option><option value=''>produtividade</option></select></p></li>
 de arroz</option><option value=''>Cultivar de
 arroz</option><option value=''>produtividade</option></select></p></li>
 </ol>
+<ol start="3" style="list-style-type: decimal">
+<li>Fonte: <a
+href="https://agronomiar.github.io/livroagro/delineamento-inteiramente-casualizado.html"
+class="uri">https://agronomiar.github.io/livroagro/delineamento-inteiramente-casualizado.html</a></li>
+</ol>
+<div class="line-block">     Um experimento foi conduzido com o objetivo
+de estudar diferentes produtos para redução da perda de massa em
+pós-colheita de frutos de romã. O experimento foi conduzido em
+delineamento inteiramente casualizado com quatro repetições.</div>
+<p>Os Tratamentos são:</p>
+<ul>
+<li>T1: Cera Externo</li>
+<li>T2: Cera Externo + Interno</li>
+<li>T3: Óleo de Laranja Externo</li>
+<li>T4: Óleo de Laranja Interno + Externo</li>
+<li>T5: Hipoclorito de sódio Externo</li>
+<li>T6: Hipoclorito de sódio Interno + Externo</li>
+</ul>
+<p>Os resultados de perda de massa, em porcentagem, foram:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Tratamentos</th>
+<th>R1</th>
+<th>R2</th>
+<th>R3</th>
+<th>R4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2.10</td>
+<td>1.90</td>
+<td>1.68</td>
+<td>1.69</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>1.62</td>
+<td>1.82</td>
+<td>1.73</td>
+<td>1.54</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>2.62</td>
+<td>2.24</td>
+<td>2.99</td>
+<td>2.62</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>2.52</td>
+<td>2.21</td>
+<td>2.53</td>
+<td>3.22</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>2.67</td>
+<td>2.44</td>
+<td>2.78</td>
+<td>2.66</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>2.17</td>
+<td>2.27</td>
+<td>2.17</td>
+<td>2.04</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">    A partir dos dados fornecidos há diferença
+significativa entre os tratamentos? calcule.</div>
+<div class="line-block"><br />
+</div>
 <p>Faça o upload da resolução e tire suas dúvidas <a
 href="https://forms.gle/LQ6mNE4DoR1Fk6px6">aqui</a></p>
 <div class="line-block"><br />
@@ -1261,6 +1388,27 @@ arroz</p>
 de arroz</p>
 <p>Variavel resposta <span class="math inline">\(\rightarrow\)</span>
 produtividade</p>
+<ol start="3" style="list-style-type: decimal">
+<li></li>
+</ol>
+<pre class="r"><code>resproma=c(2.10,1.90,1.68,1.69,1.62,1.82,1.73,1.54,2.62,2.24,2.99,2.62,
+       2.52,2.21,2.53,3.22,2.67,2.44,2.78,2.66,2.17,2.27,2.17,2.04)
+tratroma=as.factor(rep(paste(&quot;T&quot;,1:6, sep=&quot;&quot;),e=4))
+
+modeloexercicio3=aov(resproma~tratroma)
+anova(modeloexercicio3) # Conferir GL
+#&gt; Analysis of Variance Table
+#&gt; 
+#&gt; Response: resproma
+#&gt;           Df Sum Sq Mean Sq F value    Pr(&gt;F)    
+#&gt; tratroma   5 3,6921 0,73842  12,312 2,724e-05 ***
+#&gt; Residuals 18 1,0796 0,05998                      
+#&gt; ---
+#&gt; Signif. codes:  0 &#39;***&#39; 0,001 &#39;**&#39; 0,01 &#39;*&#39; 0,05 &#39;.&#39; 0,1 &#39; &#39; 1</code></pre>
+<pre><code>#&gt; Valor crítico da distribuição F: 2,772853</code></pre>
+<p><img src="dic_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>Portanto como Fcal &gt; Ftab pode-se concluir que há diferença entre
+os tratamentos</p>
 </div>
 
 

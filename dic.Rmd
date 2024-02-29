@@ -283,7 +283,7 @@ Tabela 5: ANOVA
 
 F tabelado:
 
-```{r}
+```{r, echo=FALSE}
 # Defina o nível de significância desejado (por exemplo, 0.05 para um nível de 5%)
 nivel_de_significancia <- 0.05
 
@@ -299,11 +299,12 @@ cat("Valor crítico da distribuição F:", valor_critico, "\n")
 
 ```
 
-```{r}
+```{r, echo=FALSE}
+library(kableExtra)
 gl1 <- seq(1, 20, 1)
 gl2 <- seq(1,20,1)
 tableF <- qf(0.95, gl1, gl2)  
-tableF
+kable(tableF) 
 ```
 
 **Distribuição F**
@@ -384,6 +385,37 @@ q3 <- mcq(opts2)
 cat("d) Parcelas:" , q3)
 ```
 
+3) Fonte: https://agronomiar.github.io/livroagro/delineamento-inteiramente-casualizado.html
+
+|      Um experimento foi conduzido com o objetivo de estudar diferentes produtos para redução da perda de massa em pós-colheita de frutos de romã. O experimento foi conduzido em delineamento inteiramente casualizado com quatro repetições.
+
+Os Tratamentos são:
+
+* T1: Cera Externo
+* T2: Cera Externo + Interno
+* T3: Óleo de Laranja Externo
+* T4: Óleo de Laranja Interno + Externo
+* T5: Hipoclorito de sódio Externo
+* T6: Hipoclorito de sódio Interno + Externo
+
+Os resultados de perda de massa, em porcentagem, foram:
+
+Tratamentos|	R1|	R2|	R3|	R4|
+-|-|-|-|-|
+1|	2.10|	1.90|	1.68|	1.69|
+2|	1.62|	1.82|	1.73|	1.54|
+3|	2.62|	2.24|	2.99|	2.62|
+4|	2.52|	2.21|	2.53|	3.22|
+5|	2.67|	2.44|	2.78|	2.66|
+6|	2.17|	2.27|	2.17|	2.04|
+
+|     A partir dos dados fornecidos há diferença significativa entre os tratamentos? calcule. 
+
+
+
+|
+|
+
 Faça o upload da resolução e tire suas dúvidas [aqui](https://forms.gle/LQ6mNE4DoR1Fk6px6)
 
 | 
@@ -414,6 +446,7 @@ Faça o upload da resolução e tire suas dúvidas [aqui](https://forms.gle/LQ6m
 
 * $SQtotal = SQresiduo + SQtratamento = 17564523 +  4192510.56 =  21757034$ 
 
+
 2 b) Resposta 
 
 Parcelas $\rightarrow$ linhas de arroz 
@@ -423,3 +456,43 @@ Tratamento $\rightarrow$ Cultivar de arroz
 Variavel resposta $\rightarrow$ produtividade
 
 
+3) 
+```{r}
+resproma=c(2.10,1.90,1.68,1.69,1.62,1.82,1.73,1.54,2.62,2.24,2.99,2.62,
+       2.52,2.21,2.53,3.22,2.67,2.44,2.78,2.66,2.17,2.27,2.17,2.04)
+tratroma=as.factor(rep(paste("T",1:6, sep=""),e=4))
+
+modeloexercicio3=aov(resproma~tratroma)
+anova(modeloexercicio3) # Conferir GL
+```
+
+```{r, echo=FALSE}
+# Defina o nível de significância desejado (por exemplo, 0.05 para um nível de 5%)
+nivel_de_significancia <- 0.05
+
+# Defina os graus de liberdade do numerador (df1) e do denominador (df2)
+dfroma <- 5  # Graus de liberdade do numerador
+dfroma2 <- 18 # Graus de liberdade do denominador
+
+# Encontre o valor crítico da distribuição F para o nível de significância especificado
+valor_criticoroma <- qf(1 - nivel_de_significancia, dfroma, dfroma2)
+
+# Imprima o valor crítico
+cat("Valor crítico da distribuição F:", valor_criticoroma, "\n")
+
+```
+
+
+```{r, echo=FALSE}
+library(RcmdrMisc)
+
+local({
+  .x <- seq(0.005, 10.344, length.out=1000)  
+  plotDistr(.x, df(.x, df1=5, df2=18), cdf=FALSE, xlab="x", ylab="Density", main=paste("F Distribution:  Numerator df = 5, Denominator df = 18"), 
+  regions=list(c(0, 2.77)), col=c('#008000', '#BEBEBE'), legend.pos='topright')
+})
+
+```
+
+
+Portanto como Fcal > Ftab pode-se concluir que há diferença entre os tratamentos 
