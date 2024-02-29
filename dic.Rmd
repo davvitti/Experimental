@@ -311,7 +311,7 @@ for(i in 1:20){
 rownames(Ftab) <- (1:20)
 colnames(Ftab) <- 1:9
 round(Ftab,2)      
-kable(Ftab, row.names = T) 
+kable(Ftab, row.names = T, digits = 3) 
 ```
 
 **Distribuição F**
