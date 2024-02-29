@@ -301,10 +301,17 @@ cat("Valor crítico da distribuição F:", valor_critico, "\n")
 
 ```{r, echo=FALSE}
 library(kableExtra)
-gl1 <- seq(1, 20, 1)
-gl2 <- seq(1,20,1)
-tableF <- qf(0.95, gl1, gl2)  
-kable(tableF) 
+
+Ftab <- matrix(0, ncol = 9, nrow = 20)
+for(i in 1:20){
+  for(j in 1:9){
+    Ftab[i,j] <- qf(0.95, j, i)
+  }
+}
+rownames(Ftab) <- (1:20)
+colnames(Ftab) <- 1:9
+round(Ftab,2)      
+kable(Ftab, row.names = T) 
 ```
 
 **Distribuição F**
