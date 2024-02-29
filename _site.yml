@@ -35,6 +35,9 @@ navbar:
       href: https://davivitti.shinyapps.io/atividades/
     - text: "Dúvidas?"
       href:  https://forms.gle/LQ6mNE4DoR1Fk6px6
+  right:
+    - text: "Prof. Drª Renata A. Sermarini"
+      href:  https://forms.gle/LQ6mNE4DoR1Fk6px6
 output:
    html_document:
     toc: true
