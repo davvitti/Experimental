@@ -1,10 +1,24 @@
 ---
 title: "Planejamento de experimentos"
 ---
+# Método científico
 
 Consiste da aplicação da lógica e objetividade para compreender um fenômeno (KEMPTHORNE, 1973).
 
-![metodo cientifico](figs/circ_mc.jpg)
+![metodo cientifico](figs/circ_mc.jpg){width="50%"}
+
+|
+|     A partir de uma observação dos fenômenos naturais, o instinto curioso dos seres humanos é tentar entender como e por que ocorre tal fenômeno. Ao longo das décadas diversos mecanismos foram utilizados para responder essas perguntas. Nos dias atuais tendo observado algo cria-se hipóteses que respondam alguma dessas perguntas, essas hipóteses devem ser testadas e interpretadas para que seja possivel chegar àlguma conclusão.
+
+|     Na experimentação o objetivo principal é criar um mecanismo capaz de testar suas hipóteses, logo é fundamental que a interferencia nos resuldados seja majoritariamente pelos tratamentos utilizados. 
+
+|    Após a realização de um experimento e de sua comprovação estatística os resultados podem ser novamente confrontados em outro experimento com outros tratamentos, seguindo a mesma lógica da dialética hegeliana. 
+
+
+
+![dialetica](\figs\charge.png){width="50%"}
+
+
 
 
 # Exemplos
@@ -15,11 +29,11 @@ Você gosta de ouvir Bach? Os porcos também!
 
 [veja aqui](https://jornal.usp.br/ciencias/ciencias-agrarias/voce-gosta-de-ouvir-bach-os-porcos-tambem/)	
 
-![porco](figs/pigmusic.png)	
+![porco](figs/pigmusic.png){width="50%"}
 
 ## Casa de vegetação
 
-![casa de vegetação](figs/casadevegetacao.jpg)
+![casa de vegetação](figs/casadevegetacao.jpg){width="50%"}
 	
 Fonte: www.embrapa.br
 
@@ -31,7 +45,7 @@ Fonte: Plantação de limão, Fazenda São Luiz, Fernando Prestes, SP
 
 ## Herbicida
 
-![herbivida](figs/herbicida.jpg)
+![herbivida](figs/herbicida.jpg){width="50%"}
 
 Fonte: pergunteaoagronomo.com.br
 
@@ -58,7 +72,7 @@ A partir do planejamento teremos orientações para
 Um pouco de história}
 
 
-![broad](figs/BroadbalkExp.jpg)
+![broad](figs/BroadbalkExp.jpg){width="50%"}
 
 
 ![broad](Figs/BroadbalkExp2.jpg)
@@ -68,7 +82,7 @@ experimento de Park Grass (Broadbalk) foi instalado em 1856 na Estação Experim
 Delineado para avaliar os efeitos de fertilizantes na produção de grama permanente cortada para feno. É considerado como o experimento ecológico de longo prazo mais importante do mundo.
 
 
-![milho](figs/Milho.jpg)
+![milho](figs/Milho.jpg){width="50%"}
 
 
 |	Suponha que tenha sido avaliada a altura de cada uma de cinco plantas de milho, que vieram da mesma variedade e foram cultivadas sob as mesmas condições. Tem-se que o valor da altura $y_j$ será dado por:
