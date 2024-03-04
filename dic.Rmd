@@ -9,6 +9,7 @@ knitr::opts_chunk$set(
 )
 options(OutDec = ",")
 library(webexercises)
+library(reticulate)
 ```
 
 ```{css, echo = FALSE}
@@ -503,3 +504,8 @@ local({
 
 
 Portanto como Fcal > Ftab pode-se concluir que há diferença entre os tratamentos 
+
+
+
+
+

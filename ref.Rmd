@@ -1,0 +1,36 @@
+---
+title: "Referências"
+---
+
+ANDRADE, D.F.; OGLIARI, P.J. { Estatística para as ciências agrárias e biológicas com noções de experimentação}. Editora da UFSC, Florianópolis, 2007.
+
+BARBIN, D., 1994. Planejamento e análise estatística de experimentos agronômicos, Piracicaba, SP. 
+
+BRIEN, C.J. {http://chris.brien.name/ee2/smhoutsoln.html}{Statistical Modelling}. 2016.
+
+DIAS, C.T. dos S. 2010. Estatística Experimental. LCE, ESALQ/USP. Disponível em http://www.lce.esalq.usp.br/tadeu.html ou https://sites.google.com/site/carlostadeudossantosdias/
+
+FEDERER, W.T. Experimental Design: Theory and Application. New York. The Macmillan Copany. 1955.
+			
+FISHER, R.A. The design os experiments. New York, Hafner Publishing Company. 1971.
+
+MAGALHÃES, M.N.; LIMA, A.C. P de. { Noções de Probabilidade e Estatística}. 6$^a$
+ed. São Paulo: EDUSP, 2007.
+
+METZGER, J.P.; ALVES. L.F.; GOULART, W.; TEIXEIRA, A.M.G.; SIMÕES, S.J.C. \& CATHARINO, E.L. { An important biological area, but still poorly known: the Morro Grande Forest Reserve}. Biota Neotrop. May/Aug 2006 vol. 6 no. 2.
+
+MOORE, D. S. { A estatística básica e sua prática}. Rio de Janeiro: LTC, 2011.
+
+PIMENTEL-GOMES, F. Um curso de estatística experimental. Piracicaba. 2000.
+
+VIEIRA, S. & HOFFMANN, R. Estatística Experimental. 2ª. Ed. Atlas, São Paulo, 1999. 185p.
+
+ZOCCHI, S.S.; LEANDRO, R.A. { Notas para acompanhar a disciplina LCE-211-Estatística Geral}. ESALQ-USP, Piracicaba, S.P. 1999.
+
+
+
+
+
+
+
+

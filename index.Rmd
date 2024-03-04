@@ -51,3 +51,6 @@ Esse cenário deletério se faz presente também no ambito acadêmico de nivel s
 |
 |     Conforme o jogo vai de desenrolando, é possível obter dados de cura, infectados e óbitos provocados pela doença. Assim com esses dados será possível realizar uma análise descritiva, construir gráficos e tabelas, além de entender as diferenças entre as suas escolhas no jogo. 
 
+
+
+
